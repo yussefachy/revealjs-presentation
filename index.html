@@ -2,40 +2,69 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Youssef Achi | WSM Project Presentation</title>
+    <title>Youssef Achi | Computer Engineering Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/solarized.min.css">
     <style>
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #2aa198;
+        :root {
+            --primary-color: #2aa198;  /* Teal accent color */
+            --dark-bg: #002b36;        /* Solarized dark */
         }
         .wsm-logo {
-            height: 80px;
-            margin: 20px;
+            height: 100px;
+            margin: 15px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
         }
-        .highlight-box {
-            background: rgba(42, 161, 152, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #2aa198;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+        }
+        .highlight-card {
+            background: rgba(42, 161, 152, 0.08);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .skill-bar-container {
+            width: 80%;
+            margin: 0 auto;
         }
         .skill-bar {
+            height: 25px;
+            margin: 12px 0;
             background: #eee;
-            border-radius: 5px;
-            margin: 10px 0;
+            border-radius: 20px;
+            overflow: hidden;
         }
-        .skill-level {
-            background: #2aa198;
-            height: 20px;
-            border-radius: 5px;
+        .skill-progress {
+            height: 100%;
+            background: var(--primary-color);
             text-align: right;
             padding-right: 10px;
             color: white;
-            font-size: 12px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .contact-chip {
+            display: inline-block;
+            background: var(--dark-bg);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -43,108 +72,123 @@
     <div class="reveal">
         <div class="slides">
             <!-- Title Slide -->
-            <section data-markdown>
-                <textarea data-template>
-                    # Youssef Achi
-                    ### Computer Engineering Student
-                    #### Warsaw university of Management (WSM)
-                    
-                    ![WSM Logo](https://entrant.eu/wp-content/uploads/2017/12/Bezymyannyj-3_cr.png){.wsm-logo}
-                    
-                    **Reveal.js Project Presentation**  
-                    *Designed for Productivity & Clarity*
-                </textarea>
+            <section>
+                <div class="profile-header">
+                    <div>
+                        <h1>Youssef Achi</h1>
+                        <h3>Bachelor's Degree in Computer Engineering</h3>
+                        <p>Warsaw School of Management</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Warsaw_School_of_Management_logo.png/320px-Warsaw_School_of_Management_logo.png" class="wsm-logo">
+                </div>
+                <p>Interactive Portfolio Presentation</p>
+                <small>Built with Reveal.js | Hosted on GitHub Pages</small>
             </section>
 
             <!-- About Me -->
             <section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## About Me
-                        - 🎓 **Computer Engineering Student** at WSM
-                        - 💻 Passionate about **Web Development & AI**
-                        - 🌍 Multilingual (English, Arabic, French)
-                        - 🚀 Goal: **Build impactful tech solutions**
-                        
-                        *Press **DOWN** for skills*
-                    </textarea>
+                <section>
+                    <h2>About Me</h2>
+                    <div class="highlight-card">
+                        <ul>
+                            <li>🎓 <strong>Bachelor's in Computer Engineering</strong> at WSM</li>
+                            <li>💻 Specializing in <strong>Web Development & AI</strong></li>
+                            <li>🌍 Fluent in English, Arabic, and Polish</li>
+                            <li>🚀 Passionate about <strong>clean code</strong> and <strong>user-centric design</strong></li>
+                        </ul>
+                    </div>
+                    <p><small>↓ Press DOWN for skills</small></p>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ### Technical Skills
+                
+                <section>
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bar-container">
+                        <div>Python</div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">Python (85%)</div>
+                            <div class="skill-progress" style="width: 85%">85%</div>
                         </div>
+                        
+                        <div>JavaScript</div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%">JavaScript (75%)</div>
+                            <div class="skill-progress" style="width: 75%">75%</div>
                         </div>
+                        
+                        <div>HTML/CSS</div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%">HTML/CSS (80%)</div>
+                            <div class="skill-progress" style="width: 80%">80%</div>
                         </div>
-                    </textarea>
+                    </div>
                 </section>
             </section>
 
             <!-- WSM Project -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## WSM Project Highlights
-                    <div class="highlight-box">
-                        - **Reveal.js Framework**: Modern web presentation tool  
-                        - **Key Features**:  
-                          ✔ Vertical & horizontal navigation  
-                          ✔ Markdown support  
-                          ✔ Mobile-friendly design  
-                        - **GitHub Pages**: Public deployment
+            <section>
+                <h2>WSM Project Showcase</h2>
+                <div class="highlight-card">
+                    <h4>Reveal.js Presentation System</h4>
+                    <ul>
+                        <li>✔ Modern web-based slides with <strong>Markdown support</strong></li>
+                        <li>✔ <strong>Responsive design</strong> for all devices</li>
+                        <li>✔ Deployed on <strong>GitHub Pages</strong></li>
+                        <li>✔ Features <strong>interactive elements</strong> and animations</li>
+                    </ul>
+                </div>
+                <p><small>Project demonstrates my frontend development skills</small></p>
+            </section>
+
+            <!-- Productivity -->
+            <section>
+                <h2>My Engineering Workflow</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <h4>Tools</h4>
+                        <ul>
+                            <li>VS Code</li>
+                            <li>Git & GitHub</li>
+                            <li>Notion</li>
+                            <li>Figma</li>
+                        </ul>
                     </div>
-                    
-                    ![Code Screenshot](https://i.imgur.com/Kfz1vHX.png)
-                </textarea>
+                    <div>
+                        <h4>Methods</h4>
+                        <ul>
+                            <li>Agile Development</li>
+                            <li>Test-Driven Design</li>
+                            <li>Pomodoro Technique</li>
+                            <li>Code Reviews</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
-            <!-- Productivity Tips -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## My Productivity System
-                    ```mermaid
-                    graph TD
-                        A[Morning Routine] --> B[Time Blocking]
-                        B --> C[Pomodoro Technique]
-                        C --> D[Deep Work Sessions]
-                        D --> E[Evening Review]
-                    ```
-                    - **Tools I Use**:  
-                      - Notion for planning  
-                      - VS Code + GitHub  
-                      - Forest (Focus app)
-                </textarea>
-            </section>
-
-            <!-- Closing Slide -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## Thank You!
-                    ### Let's Connect
-                    - 📧 Email: [ysfachi0@gmail.com](mailto:ysfachi0@gmail.com)  
-                    - 💼 LinkedIn: [Youssef Achi](https://linkedin.com/in/youssefachi)  
-                    - 🔗 GitHub: [yussefachy](https://github.com/yussefachy)  
-                    
-                    *Press **ESC** for slide overview*
-                </textarea>
+            <!-- Contact -->
+            <section>
+                <h2>Let's Connect</h2>
+                <div style="margin-top: 40px;">
+                    <div class="contact-chip">📧 ysfachi0@gmail.com</div><br>
+                    <div class="contact-chip">💼 LinkedIn: Youssef Achi</div><br>
+                    <div class="contact-chip">🔗 GitHub: yussefachy</div>
+                </div>
+                
+                <div style="margin-top: 60px; font-size: 0.8em;">
+                    <p>Presentation Source Code:</p>
+                    <a href="https://github.com/yussefachy/revealjs-presentation" target="_blank">
+                        github.com/yussefachy/revealjs-presentation
+                    </a>
+                </div>
             </section>
         </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/mermaid/mermaid.min.js"></script>
     <script>
         Reveal.initialize({
-            plugins: [RevealMarkdown, RevealMermaid],
+            plugins: [RevealMarkdown],
             hash: true,
-            transition: 'slide',
-            backgroundTransition: 'fade',
-            mermaid: { theme: 'neutral' }
+            transition: 'convex',
+            backgroundTransition: 'slide',
+            pdfSeparateFragments: false
         });
     </script>
 </body>
