@@ -2,98 +2,134 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Reveal.js Presentation</title>
+    <title>Youssef Achi | WSM Project Presentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/solarized.min.css">
     <style>
-        .slanted-bg {
-            background: linear-gradient(45deg, #6b5b95 0%, #a39193 100%);
-            padding: 30px;
-            transform: skew(-10deg);
-            border-radius: 15px;
-            margin: 0 auto;
-            width: 80%;
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2aa198;
         }
-        .content {
-            transform: skew(10deg);
-            text-align: left;
+        .wsm-logo {
+            height: 80px;
+            margin: 20px;
         }
-        .reveal section img {
-            border: none;
-            box-shadow: none;
-            max-height: 400px;
+        .highlight-box {
+            background: rgba(42, 161, 152, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2aa198;
+        }
+        .skill-bar {
+            background: #eee;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .skill-level {
+            background: #2aa198;
+            height: 20px;
+            border-radius: 5px;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
+            <!-- Title Slide -->
             <section data-markdown>
                 <textarea data-template>
-                    # My Reveal.js Presentation
-                    ## Hosted on GitHub Pages
+                    # Youssef Achi
+                    ### Computer Engineering Student
+                    #### Warsaw university of Management (WSM)
                     
-                    ![Reveal.js Logo](https://revealjs.com/logo.png)
+                    ![WSM Logo](https://entrant.eu/wp-content/uploads/2017/12/Bezymyannyj-3_cr.png){.wsm-logo}
+                    
+                    **Reveal.js Project Presentation**  
+                    *Designed for Productivity & Clarity*
                 </textarea>
             </section>
-            
-            <!-- Vertical Slides -->
+
+            <!-- About Me -->
             <section>
                 <section data-markdown>
                     <textarea data-template>
-                    ## Vertical Navigation
-                    - Use **DOWN ARROW** to navigate
-                    - These are nested slides
-                    - Horizontal slides are siblings
+                        ## About Me
+                        - 🎓 **Computer Engineering Student** at WSM
+                        - 💻 Passionate about **Web Development & AI**
+                        - 🌍 Multilingual (English, Arabic, French)
+                        - 🚀 Goal: **Build impactful tech solutions**
+                        
+                        *Press **DOWN** for skills*
                     </textarea>
                 </section>
                 <section data-markdown>
                     <textarea data-template>
-                    ### Sub-Slide 1
-                    ![Programming](https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)
+                        ### Technical Skills
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%">Python (85%)</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%">JavaScript (75%)</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%">HTML/CSS (80%)</div>
+                        </div>
                     </textarea>
                 </section>
             </section>
-            
+
+            <!-- WSM Project -->
             <section data-markdown>
                 <textarea data-template>
-                ## Custom Styled Slide
-                <div class="slanted-bg">
-                    <div class="content">
-                    ### Creative Design
-                    - Gradient backgrounds
-                    - CSS transformations
-                    - Responsive layout
+                    ## WSM Project Highlights
+                    <div class="highlight-box">
+                        - **Reveal.js Framework**: Modern web presentation tool  
+                        - **Key Features**:  
+                          ✔ Vertical & horizontal navigation  
+                          ✔ Markdown support  
+                          ✔ Mobile-friendly design  
+                        - **GitHub Pages**: Public deployment
                     </div>
-                </div>
+                    
+                    ![Code Screenshot](https://i.imgur.com/Kfz1vHX.png)
                 </textarea>
             </section>
-            
+
+            <!-- Productivity Tips -->
             <section data-markdown>
                 <textarea data-template>
-                ## Code Highlighting
-                ```python [1-2|3|4]
-                # Fibonacci function
-                def fib(n):
-                    a, b = 0, 1
-                    for _ in range(n):
-                        yield a
-                        a, b = b, a+b
-                ```
+                    ## My Productivity System
+                    ```mermaid
+                    graph TD
+                        A[Morning Routine] --> B[Time Blocking]
+                        B --> C[Pomodoro Technique]
+                        C --> D[Deep Work Sessions]
+                        D --> E[Evening Review]
+                    ```
+                    - **Tools I Use**:  
+                      - Notion for planning  
+                      - VS Code + GitHub  
+                      - Forest (Focus app)
                 </textarea>
             </section>
-            
+
+            <!-- Closing Slide -->
             <section data-markdown>
                 <textarea data-template>
-                ## Final Slide
-                **Features Demonstrated:**
-                - Markdown formatting
-                - Vertical navigation
-                - Custom CSS styling
-                - Code highlighting
-                - GitHub Pages hosting
-                
-                [View Source Code](https://github.com/yussefachy/revealjs-presentation)
+                    ## Thank You!
+                    ### Let's Connect
+                    - 📧 Email: [ysfachi0@gmail.com](mailto:ysfachi0@gmail.com)  
+                    - 💼 LinkedIn: [Youssef Achi](https://linkedin.com/in/youssefachi)  
+                    - 🔗 GitHub: [yussefachy](https://github.com/yussefachy)  
+                    
+                    *Press **ESC** for slide overview*
                 </textarea>
             </section>
         </div>
@@ -101,12 +137,14 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/mermaid/mermaid.min.js"></script>
     <script>
         Reveal.initialize({
-            plugins: [RevealMarkdown],
+            plugins: [RevealMarkdown, RevealMermaid],
             hash: true,
-            transition: 'convex',
-            backgroundTransition: 'zoom'
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            mermaid: { theme: 'neutral' }
         });
     </script>
 </body>
