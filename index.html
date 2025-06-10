@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>My Reveal.js Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css">
+    <style>
+        .slanted-bg {
+            background: linear-gradient(45deg, #6b5b95 0%, #a39193 100%);
+            padding: 20px;
+            transform: skew(-10deg);
+            border-radius: 15px;
+        }
+        .content {
+            transform: skew(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <textarea data-template>
+                    # Welcome to My Presentation
+                    ## Advanced Reveal.js Features
+                    ![Reveal.js Logo](https://revealjs.com/logo.png)
+                    ---
+                </textarea>
+            </section>
+            
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                    ## Vertical Navigation
+                    - Horizontal slides are siblings
+                    - Vertical slides are nested
+                    - Press ⬇️ to navigate vertically
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                    ### Sub-Slide 1
+                    ![Coding](https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg)
+                    ---
+                    </textarea>
+                </section>
+            </section>
+            
+            <section data-markdown>
+                <textarea data-template>
+                ## Custom Styled Slide
+                <div class="slanted-bg">
+                    <div class="content">
+                    ### Styled Content
+                    - Gradient background
+                    - Skewed transformation
+                    - Custom borders
+                    </div>
+                </div>
+                ---
+                </textarea>
+            </section>
+            
+            <section data-markdown>
+                <textarea data-template>
+                ## Code Highlighting
+                ```javascript [1-2|3|4]
+                // Sample code
+                function greet(name) {
+                    return `Hello, ${name}!`;
+                }
+                console.log(greet("GitHub"));
+                ```
+                ---
+                </textarea>
+            </section>
+            
+            <section data-markdown>
+                <textarea data-template>
+                ## Final Slide
+                - Reveal.js features:
+                    - Markdown support
+                    - Vertical/horizontal navigation
+                    - Custom themes
+                    - Code highlighting
+                    - Export to PDF
+                
+                [GitHub Repository](https://github.com/yourusername/revealjs-presentation)
+                </textarea>
+            </section>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script>
+        Reveal.initialize({
+            plugins: [RevealMarkdown],
+            hash: true,
+            transition: 'convex',
+            backgroundTransition: 'zoom',
+            pdfSeparateFragments: false
+        });
+    </script>
+</body>
+</html>
